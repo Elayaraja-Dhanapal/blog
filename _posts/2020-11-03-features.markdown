@@ -6,6 +6,7 @@ categories: jekyll update
 author: "Elayaraja Dhanapal"
 permalink: features.html
 order: 2
+link: features
 ---
 1. The Automation project uses ansible playbooks for  installation of OCP on Power and other post install customizations.
 2. The use of Playbooks in Ansible is also another reason for the major advantages of Ansible. Playbooks are Ansible configuration files, and the language for writing them is YAML.

@@ -143,7 +143,7 @@
             {% assign navlist = site.posts | sort: 'order'  %}
             {% for post in navlist%}
             {% if post.permalink %}
-            <li><a style="{% if page.url == post.permalink%} color:red; {% endif %}"
+            <li><a style="{% if page.title == post.title%} color:red; {% endif %}"
                 href="{{post.permalink}}">{{ post.title }}</a></li>
             {% elsif page.url == post.permalink %}
             <li class="active"><a href="{{post.permalink | remove: "/"}}">{{post.title}}</a></li>
@@ -161,7 +161,7 @@
             {% assign navlistHome = site.posts | sort: 'order'  %}
             {% for post in navlistHome%}
             {% if post.permalink %}
-            <li><a style="{% if page.url == post.permalink%} color:red; {% endif %}"
+            <li><a style="{% if page.title == post.link%} color:red; {% endif %}"
                 href="{{post.permalink}}">{{ post.title }}</a></li>
             {% elsif page.url == post.permalink %}
             <li class="active"><a href="{{post.permalink | remove: "/"}}">{{post.title}}</a></li>

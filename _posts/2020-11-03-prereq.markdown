@@ -6,6 +6,7 @@ categories: jekyll update
 author: "Elayaraja Dhanapal"
 permalink: prereq.html
 order: 3
+link: prereq
 ---
 
 * Git: Please refer to the [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for instructions on installing the latest Git.
