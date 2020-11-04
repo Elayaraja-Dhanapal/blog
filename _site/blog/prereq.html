@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Prerequisites</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      margin: 2px;
+      padding: 1px;
+      /* font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul,
+    li {
+      text-decoration: none;
+      color: inherit;
+      list-style: none;
+    }
+
+    #container {
+      min-height: 100%;
+    }
+
+    #main {
+      overflow: auto;
+      padding-bottom: 30px;
+    }
+
+    #header {
+      height: 10%;
+      padding: 30px;
+      text-align: center;
+      font-size: 25px;
+      color: white;
+      background-image: linear-gradient(120deg, #0062FF, #e00);
+    }
+
+    .btn {
+      display: inline-block;
+      /* margin-bottom: 1rem; */
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 0.3rem;
+      transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+      box-sizing: border-box;
+      padding: 0.5rem 0.5rem;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .btn:hover {
+      background-image: linear-gradient(120deg, #e00, #0062FF);
+    }
+
+    .nav {
+      position: absolute;
+
+      /* padding: 10px; */
+    }
+
+    .caption {
+      color: #55a5d9;
+      height: 32px;
+      line-height: 32px;
+      padding: 0 0.618em;
+      margin: 12px 0 0;
+      display: block;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 85%;
+      white-space: nowrap;
+    }
+
+    .nav ul li {
+      list-style: none;
+      padding: 0 0.618em;
+    }
+
+    .nav ul li a {
+      text-decoration: none;
+    }
+
+    .article {
+      position: relative;
+      /* margin-left: 10%;
+      width: 85%; */
+    }
+
+    .active {
+      color: white;
+    }
+
+    #footer {
+      text-align: center;
+      padding: 10px;
+      background-color: black;
+      position: relative;
+      height: 30px;
+      margin-top: -30px;
+      color: #ccc;
+      clear: both;
+    }
+
+    #footer a:hover {
+      color: red;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="main">
+      <header id="header">
+        <section>
+          <h2>Automation for OpenShift on IBM Power Platform</h2>
+        </section>
+        <section>
+          <a class="btn" href="https://github.ibm.com/tanikap1/tania-auto">View on GitHub</a>
+        </section>
+      </header>
+      <div style="width: 18%;
+      position: absolute;">
+        <nav class="nav">
+          <p class="caption"><span>Contents:</span></p>
+          <ul>
+            
+            
+            
+            <li><a style=""
+                href="/blog/">Home</a></li>
+            
+            
+            
+            <li><a style=""
+                href="/blog/introduction.html">Introduction</a></li>
+            
+            
+            
+            <li><a style=""
+                href="/blog/features.html">Features</a></li>
+            
+            
+            
+            <li><a style=" color:red; "
+                href="/blog/prereq.html">Prerequisites</a></li>
+            
+            
+            
+            <li><a style=""
+                href="/blog/steps.html">Steps</a></li>
+            
+            
+            
+            <li><a style=""
+                href="/blog/summary.html">Summary</a></li>
+            
+            
+          </ul>
+        </nav>
+      </div>
+      <div style="width: 80%;
+      margin-left: 18%;      
+      padding: 10px;">
+        <article class="article">
+          
+          <ul>
+  <li>Git: Please refer to the <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">link</a> for instructions on installing the latest Git.</li>
+  <li><a href="https://golang.org/doc/install">Go</a> 1.13 (to build the provider plugin)</li>
+  <li><a href="https://github.com/ocp-power-automation/ocp4-upi-kvm/blob/master/docs/prepare-images.md">Preparing Images for Power</a></li>
+  <li>docker v17.03+, podman v1.2.0+, or buildah v1.7+</li>
+  <li>Access to a cluster based on Kubernetes v1.12.0+</li>
+  <li>Access to a container registry</li>
+  <li>Public internet connection for all the nodes to download the playbooks and images as part of the setup process.
+VM configs for OpenShift nodes that will be deployed with RHCOS image.</li>
+  <li>Bootstrap, Master - 4 vCPUs, 16GB RAM, 120 GB Disk
+This config is suitable for majority of the scenarios</li>
+  <li>Worker - 4 vCPUs, 16GB RAM, 120 GB Disk
+Increase worker vCPUs, RAM and Disk based on application requirements
+Following is the recommended VM config for the helper node that will be deployed with RHEL 8.0 (or later) image.</li>
+  <li>Helper node (bastion) - 2vCPUs, 16GB RAM, 200 GB Disk</li>
+</ul>
+
+          
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    copyrights IBM&COPY; 2020
+    <a href="https://github.com/Elayaraja-Dhanapal/blog">Automation for OpenShift on IBM Power Platform</a>
+    is maintained by
+    <a href="https://github.ibm.com/tanikap1">tanikap1</a> &amp;
+    <a href="https://github.com/Elayaraja-Dhanapal">Elayaraja D</a>
+  </footer>
+
+</body>
+
+</html>
