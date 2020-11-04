@@ -4,7 +4,7 @@ title:  "Introduction"
 date:   2020-11-03 12:18:19 +0530
 categories: jekyll update
 author: "Elayaraja Dhanapal"
-permalink: /introduction.html
+permalink: /blog/introduction.html
 order: 1
 ---
 
