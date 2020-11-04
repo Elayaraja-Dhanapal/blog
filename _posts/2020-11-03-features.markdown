@@ -4,7 +4,7 @@ title:  "Features"
 date:   2020-11-03 12:18:19 +0530
 categories: jekyll update
 author: "Elayaraja Dhanapal"
-permalink: /blog/features.html
+permalink: features.html
 order: 2
 ---
 1. The Automation project uses ansible playbooks for  installation of OCP on Power and other post install customizations.
