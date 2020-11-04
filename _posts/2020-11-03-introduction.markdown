@@ -17,6 +17,6 @@ Playbooks are designed to be human-readable and are developed in a basic text la
 The Playbooks are used for installation of OCP on Power and other post install customizations
 [Terraform][terraform] is an Open Source software that is developed by HashiCorp that enables predictable and consistent provisioning of IBM Cloud platform, classic infrastructure, and VPC infrastructure resources by using a high-level scripting language. Terraform is used to create, manage, and update infrastructure resources such as physical machines, VMs, network switches, containers, and more. Terraform can be used to automate IBM Cloud resource provisioning, rapidly build complex, multi-tier cloud environments, and enable Infrastructure as Code (IaC).
 A lot of OpenShift 4 specific jargon is used throughout this doc, so please visit the [official documentation page][official documentation page] to get familiar with OpenShift 4.
-[playbooks]: https://github.com/ocp-power-automation/ocp4-playbooks
-[terraform]: https://www.terraform.io/docs/providers/index.html
-[official documentation page]: https://docs.openshift.com/container-platform/latest
+[playbooks]: (https://github.com/ocp-power-automation/ocp4-playbooks)
+[terraform]: (https://www.terraform.io/docs/providers/index.html)
+[official documentation page]: (https://docs.openshift.com/container-platform/latest)
